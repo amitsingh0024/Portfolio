@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Parallax effect for sections */
+.parallax {
+  position: relative;
+  will-change: transform;
+  transition: background 0.5s;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+  --background: #f7fafc;
+  --card: #fff;
+  --primary: #2563eb;
+  --text: #222;
+  --secondary: #64748b;
+  --vanilla: #dfd6a7;
+  --mustard: #f7ce5b;
+  --earth-yellow: #f7b05b;
+  --satin-sheen-gold: #af9b46;
+  --licorice: #1f1300;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #5ac5c2;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--text);
+  background: #e3f0ff;
+  font-family: 'PT Serif', serif;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project card hover effects */
+.project-card {
+  background: var(--card) !important;
+  color: var(--text);
+  box-shadow: 0 2px 12px 0 rgba(30, 41, 59, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section spacing */
+.section {
+  padding: 6rem 0;
+  background: var(--card);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Image zoom on hover for project metrics */
+.img-zoom {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.img-zoom:hover {
+  transform: scale(2);
+  z-index: 10;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+.text-gray-300 {
+  color: var(--secondary) !important;
+}
+
+.text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+.bg-purple-600, .bg-purple-700 {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.hover\:bg-purple-700:hover {
+  background-color: #1e40af !important;
+}
+
+.px-3.py-1.bg-gray-800.rounded-full.text-sm, .bg-gray-800 {
+  background: #e0e7ef !important;
+  color: var(--primary) !important;
+}
+
+.p-3.rounded-full.bg-gray-800 {
+  background: #e0e7ef !important;
+  color: var(--primary) !important;
+}
+
+/* TEMPORARY DEBUG COLORS FOR VISUALIZATION */
+.hero-section { background: #ffadad !important; }
+.about-section { background: #ffd6a5 !important; }
+.projects-section { background: #fdffb6 !important; }
+.contact-section { background: #caffbf !important; }
+.project-card { background: #9bf6ff !important; }
+
+/* For learn more/project detail pages */
+.project-detail-main { background: #bdb2ff !important; }
+.project-detail-header { background: #a0c4ff !important; }
+.project-detail-content { background: #ffc6ff !important; }
+
+/* Remove previous color overrides for body, .section, .project-card, etc. */
+body { font-family: 'PT Serif', serif; }
+.section { padding: 6rem 0; }
+.project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.hero-section,
+.about-section,
+.projects-section,
+.contact-section,
+.project-card,
+.project-detail-main,
+.project-detail-header,
+.project-detail-content {
+  border-radius: 1.25rem !important; /* 20px */
+}
