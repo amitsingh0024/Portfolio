@@ -89,9 +89,9 @@ export default function VoicifyProject() {
               <div className="mt-2">
                 <span className="font-semibold text-gray-200">Example Interactions:</span>
                 <ul className="list-disc list-inside ml-6 text-gray-300">
-                  <li>"Hello, how are you?"</li>
-                  <li>"What can you do?"</li>
-                  <li>"Tell me about yourself"</li>
+                  <li>&quot;Hello, how are you?&quot;</li>
+                  <li>&quot;What can you do?&quot;</li>
+                  <li>&quot;Tell me about yourself&quot;</li>
                   <li>Any other questions or statements</li>
                 </ul>
               </div>

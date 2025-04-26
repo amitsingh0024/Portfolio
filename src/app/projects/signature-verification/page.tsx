@@ -146,8 +146,8 @@ export default function SignatureVerificationProject() {
             <div>
               <h2 className="text-2xl font-bold mb-4">Troubleshooting</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>If you encounter "Model file not found" errors: Make sure you've trained the model first and check the model path in config.py</li>
-                <li>If TensorBoard doesn't show any data: Verify that training logs exist in the runs directory and check if the training script completed successfully</li>
+                <li>If you encounter &quot;Model file not found&quot; errors: Make sure you&apos;ve trained the model first and check the model path in config.py</li>
+                <li>If TensorBoard doesn&apos;t show any data: Verify that training logs exist in the runs directory and check if the training script completed successfully</li>
                 <li>If you get data loading errors: Verify your dataset structure matches the expected format and check the CSV file paths in config.py</li>
               </ul>
             </div>

@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaArrowLeft, FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaArrowLeft } from 'react-icons/fa';
 
 export default function SwinESRGANProject() {
   return (
@@ -157,19 +158,43 @@ export default function SwinESRGANProject() {
               {/* Metrics Images Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col items-center">
-                  <img src="/images/swin-esrgan/train_g_loss_loss.png" alt="Generator Loss Curve" className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" />
+                  <Image 
+                    src="/images/swin-esrgan/train_g_loss_loss.png" 
+                    alt="Generator Loss Curve" 
+                    width={400}
+                    height={300}
+                    className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" 
+                  />
                   <span className="text-white-400 text-sm">Generator Loss During Training</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src="/images/swin-esrgan/train_d_loss_loss.png" alt="Discriminator Loss Curve" className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" />
+                  <Image 
+                    src="/images/swin-esrgan/train_d_loss_loss.png" 
+                    alt="Discriminator Loss Curve" 
+                    width={400}
+                    height={300}
+                    className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" 
+                  />
                   <span className="text-white-400 text-sm">Discriminator Loss During Training</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src="/images/swin-esrgan/val_PSNR.png" alt="PSNR Curve" className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" />
+                  <Image 
+                    src="/images/swin-esrgan/val_PSNR.png" 
+                    alt="PSNR Curve" 
+                    width={400}
+                    height={300}
+                    className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" 
+                  />
                   <span className="text-white-400 text-sm">PSNR (Peak Signal-to-Noise Ratio) Over Epochs</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src="/images/swin-esrgan/val_SSIM.png" alt="SSIM Curve" className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" />
+                  <Image 
+                    src="/images/swin-esrgan/val_SSIM.png" 
+                    alt="SSIM Curve" 
+                    width={400}
+                    height={300}
+                    className="img-zoom rounded-lg mb-2 max-h-64 object-contain bg-gray-800 p-2" 
+                  />
                   <span className="text-white-400 text-sm">SSIM (Structural Similarity Index) Over Epochs</span>
                 </div>
               </div>

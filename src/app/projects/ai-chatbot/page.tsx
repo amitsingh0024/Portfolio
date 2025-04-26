@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaArrowLeft } from 'react-icons/fa';
 
 export default function AIChatbotProject() {
@@ -126,7 +127,13 @@ export default function AIChatbotProject() {
             className="space-y-6"
           >
             <div className="bg-gray-900 p-6 rounded-lg flex flex-col items-center justify-center min-h-[200px]">
-              <img src="/images/ai-chatbot/ui-screenshot.png" alt="Chatbot UI Example" className="img-zoom rounded-lg mb-2 max-h-80 object-contain bg-gray-800 p-2" />
+              <Image 
+                src="/images/ai-chatbot/ui-screenshot.png" 
+                alt="Chatbot UI Example" 
+                width={500}
+                height={300}
+                className="img-zoom rounded-lg mb-2 max-h-80 object-contain bg-gray-800 p-2" 
+              />
               <span className="text-gray-400">Chatbot UI Example</span>
             </div>
           </motion.div>

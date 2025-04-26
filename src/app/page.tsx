@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
+import { FaArrowLeft } from 'react-icons/fa';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -124,7 +125,7 @@ export default function Home() {
             >
               <h3 className="text-2xl font-bold mb-4">AI Chatbot</h3>
               <p className="text-gray-300 mb-4">
-                Modern chatbot app with React, Node.js, and TensorFlow.js. Real-time chat, intent classification, and local NLP.
+                A modern chatbot application built with React, Node.js, and TensorFlow.js that uses natural language processing to understand and respond to user messages.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">React</span>
